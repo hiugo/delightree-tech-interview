@@ -1,0 +1,12 @@
+{
+  "name": "delightree-tech-interview",
+  "displayName": "delightree-tech-interview",
+  "expo": {
+    "name": "delightree-tech-interview",
+    "slug": "delightree-tech-interview",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
