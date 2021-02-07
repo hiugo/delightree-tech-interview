@@ -7,6 +7,14 @@
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "ios": {
+      "bundleIdentifier": "com.hiugo.delightree",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "com.hiugo.delightree",
+      "versionCode": 1
+    }
   }
 }
