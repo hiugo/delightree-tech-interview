@@ -4,6 +4,7 @@ import vars from "@theme/vars";
 import fonts from "@theme/fonts";
 
 import Text from "@components/Text";
+import Icon from "@components/Icon";
 
 export const Container = styled.View`
   flex: 1;
@@ -11,13 +12,12 @@ export const Container = styled.View`
   background-color: #fff;
 `;
 
-export const Content = styled.ScrollView`
+export const Content = styled.View`
   flex: 1;
   padding: ${`${vars.largeSpacing}px ${vars.baseSpacing}px`};
 `;
 
 export const Block = styled.View`
-  flex: 1;
   margin-bottom: ${`${vars.largeSpacing}px`};
 `;
 
@@ -30,12 +30,6 @@ export const Label = styled(Text)`
     `
     margin-bottom: 0;
   `}
-`;
-
-export const LinkWrapper = styled.View`
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 `;
 
 export const ButtonWrapper = styled.View`
@@ -57,7 +51,16 @@ export const PhotoWrapper = styled.View`
   margin-left: -10px;
 `;
 
+export const DateWrapper = styled.View`
+  flex-direction: row;
+  align-items: center;
+`;
+
+export const DateIcon = styled(Icon)`
+  margin-right: 12px;
+`;
+
 export const AttachmentWrapper = styled.View`
   flex: 1;
-  margin-top: ${`${vars.baseSpacing}px`};
+  margin-bottom: ${`${vars.baseSpacing}px`};
 `;

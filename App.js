@@ -8,7 +8,7 @@ import Navigation from "@navigation";
 const App = () => {
   let [fontsLoaded] = useFonts({
     "Nunito-Light": require("@assets/fonts/Nunito-Light.ttf"),
-    "Nunito-SemiBold": require("@assets/fonts/Nunito-SemiBold.ttf"),
+    "Nunito-Bold": require("@assets/fonts/Nunito-Bold.ttf"),
   });
 
   if (!fontsLoaded) {

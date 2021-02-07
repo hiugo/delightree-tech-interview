@@ -1,15 +1,22 @@
-import { SET_DATA } from "./actions";
+import { ADD_TASK, SET_ASSIGNED } from "./actions";
 
 export const initialState = {
-  test: 0,
+  tasks: [],
+  assigned: [],
 };
 
 export function reducer(state, action) {
   switch (action.type) {
-    case SET_DATA:
+    case ADD_TASK:
       return {
         ...state,
-        ...action.payload,
+        tasks: [...state.tasks, action.payload],
+      };
+
+    case SET_ASSIGNED:
+      return {
+        ...state,
+        assigned: action.payload,
       };
 
     default:

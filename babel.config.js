@@ -13,6 +13,7 @@ module.exports = function (api) {
             "@screens": "./src/screens",
             "@store": "./src/store",
             "@theme": "./src/theme",
+            "@utils": "./src/utils",
           },
         },
       ],

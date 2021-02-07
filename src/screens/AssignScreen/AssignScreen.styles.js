@@ -2,8 +2,10 @@ import styled from "styled-components/native";
 
 import vars from "@theme/vars";
 import fonts from "@theme/fonts";
+import colors from "@theme/colors";
 
 import Text from "@components/Text";
+import ProfilePhoto from "@components/ProfilePhoto";
 
 export const Container = styled.View`
   flex: 1;
@@ -11,31 +13,14 @@ export const Container = styled.View`
   background-color: #fff;
 `;
 
-export const Content = styled.ScrollView`
+export const Content = styled.View`
   flex: 1;
   padding: ${`${vars.largeSpacing}px ${vars.baseSpacing}px`};
+  justify-content: flex-start;
 `;
 
 export const Block = styled.View`
-  flex: 1;
   margin-bottom: ${`${vars.largeSpacing}px`};
-`;
-
-export const Label = styled(Text)`
-  font-family: ${fonts.nunitoBold};
-  margin-bottom: ${`${vars.baseSpacing}px`};
-
-  ${({ noPadding }) =>
-    noPadding &&
-    `
-    margin-bottom: 0;
-  `}
-`;
-
-export const LinkWrapper = styled.View`
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 `;
 
 export const ButtonWrapper = styled.View`
@@ -46,18 +31,24 @@ export const ButtonWrapper = styled.View`
     `};
 `;
 
-export const EmployeesWrapper = styled.View`
+export const EmployeeWrapper = styled.View`
   flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
-  padding-left: 10px;
+  margin-bottom: ${`${vars.baseSpacing}px`};
 `;
 
-export const PhotoWrapper = styled.View`
-  margin-left: -10px;
+export const EmployeeNameWrapper = styled.View``;
+
+export const EmployeeName = styled(Text)`
+  font-family: ${fonts.nunitoBold};
 `;
 
-export const AttachmentWrapper = styled.View`
-  flex: 1;
-  margin-top: ${`${vars.baseSpacing}px`};
+export const EmployeePosition = styled(Text)`
+  color: ${colors.N12};
+  font-size: ${`${vars.fontSmallSize}px`};
+  margin-top: 4px;
+`;
+
+export const StyledProfilePhoto = styled(ProfilePhoto)`
+  margin-right: 12px;
 `;
