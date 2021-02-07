@@ -58,6 +58,5 @@ export const PhotoWrapper = styled.View`
 `;
 
 export const AttachmentWrapper = styled.View`
-  flex: 1;
   margin-top: ${`${vars.baseSpacing}px`};
 `;

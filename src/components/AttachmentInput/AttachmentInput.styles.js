@@ -6,8 +6,7 @@ import colors from "@theme/colors";
 import Text from "@components/Text";
 
 export const Container = styled.View`
-  flex: 1;
-  min-height: ${`${vars.inputHeight}px`};
+  height: ${`${vars.inputHeight}px`};
   flex-direction: row;
   align-items: center;
   padding: 0 ${`${vars.smallSpacing}px`};

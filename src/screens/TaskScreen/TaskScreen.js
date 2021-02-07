@@ -95,11 +95,7 @@ const TaskScreen = () => {
         <Block>
           <Label>Attachments</Label>
           {attachments?.length ? (
-            attachments.map((file) => (
-              <AttachmentWrapper key={file}>
-                <AttachmentInput {...{ file }} />
-              </AttachmentWrapper>
-            ))
+            attachments.map(renderAttachment)
           ) : (
             <Text>No attachments...</Text>
           )}
@@ -111,6 +107,14 @@ const TaskScreen = () => {
       </ButtonWrapper>
     </Container>
   );
+
+  function renderAttachment(file) {
+    return (
+      <AttachmentWrapper key={file}>
+        <AttachmentInput {...{ file }} />
+      </AttachmentWrapper>
+    );
+  }
 
   function handleClose() {
     navigation.goBack();

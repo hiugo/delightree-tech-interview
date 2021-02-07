@@ -61,6 +61,5 @@ export const DateIcon = styled(Icon)`
 `;
 
 export const AttachmentWrapper = styled.View`
-  flex: 1;
   margin-bottom: ${`${vars.baseSpacing}px`};
 `;
